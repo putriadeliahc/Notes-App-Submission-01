@@ -1,0 +1,308 @@
+body {
+  font-family: Inter, sans-serif;
+  margin: 20px;
+  padding: 2%;
+}
+
+.konten {
+  margin: 0 auto;
+  padding: 20px;
+  border: 10px solid #ccc;
+  border-radius: 1px;
+  background: #c4e4ff;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #559eda;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.kirim {
+  width: 60%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.konten-cari {
+  display: flex;
+  align-items: center;
+}
+
+.input-cari {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.button-cari {
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 40px;
+}
+
+.search-icon {
+  color: #333;
+}
+
+button:hover {
+  background-color: #4c78af;
+}
+
+.grid-konten {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.card {
+  border: 1px solid #66d8ec;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button-konten {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.konten-formulir {
+  border: 3px solid #d20062;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ec20c7;
+  border-radius: 5px;
+  background: #d895da;
+}
+
+textarea {
+  height: 80px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.konten-catatan-utama > h2,
+.konten-sembunyi > h2 {
+  text-align: center;
+  color: white;
+}
+
+.konten-catatan-utama,
+.konten-sembunyi {
+  border: solid #f1478e;
+  background: #d20062;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.popup-edit-catatan {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.edit-catatan {
+  background-color: #fefefe;
+  margin: 20% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.edit-catatan input[type="text"],
+.edit-catatan textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.edit-catatan button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.edit-catatan button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-edit {
+  background-color: #4caf50;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-edit:hover {
+  background-color: #45a049;
+}
+
+.button-hapus {
+  background-color: #f44336;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.button-arsip {
+  background-color: #503dbd;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.button-hapus:hover {
+  background-color: #d32f2f;
+}
+
+h3 {
+  text-align: center;
+  background: #9147f1;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 1290px) {
+  .konten {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .konten-formulir {
+    max-width: 100%;
+  }
+
+  input,
+  textarea {
+    width: calc(100% - 20px);
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .grid-konten {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .edit-catatan {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-konten {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .edit-catatan {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
