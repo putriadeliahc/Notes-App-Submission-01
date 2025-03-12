@@ -1,15 +1,15 @@
 class JbtrComponent extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' }); // Membuka Shadow DOM
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.shadowRoot.innerHTML = `
+  render() {
+    this.shadowRoot.innerHTML = `
         <style>
         .jumbotron {
             background-color: #ffffff;
@@ -32,7 +32,7 @@ class JbtrComponent extends HTMLElement {
         <p>Kamu bisa menulis catatan penting hari-harimu Dibawah ini </p>
       </div>
       `;
-    }
+  }
 }
 
-customElements.define('jbtr-section', JbtrComponent);
+customElements.define("jbtr-section", JbtrComponent);
