@@ -1,15 +1,15 @@
 class AsideComponent extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' }); // Membuka Shadow DOM
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" }); // Membuka Shadow DOM
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.shadowRoot.innerHTML = `
+  render() {
+    this.shadowRoot.innerHTML = `
         <style>
         .kontak {
             background-color: #f9f9f9;
@@ -34,7 +34,7 @@ class AsideComponent extends HTMLElement {
         <p>Email: putriadeliakhairunnisa@gmail.com</p>
       </aside>
       `;
-    }
+  }
 }
 
-customElements.define('aside-section', AsideComponent);
+customElements.define("aside-section", AsideComponent);

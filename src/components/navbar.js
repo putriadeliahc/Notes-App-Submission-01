@@ -1,7 +1,7 @@
 class NavbarComponent extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' }); // Membuka Shadow DOM
+    this.attachShadow({ mode: "open" }); // Membuka Shadow DOM
   }
 
   connectedCallback() {
@@ -50,4 +50,4 @@ class NavbarComponent extends HTMLElement {
   }
 }
 
-customElements.define('navbar-section', NavbarComponent);
+customElements.define("navbar-section", NavbarComponent);

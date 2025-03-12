@@ -1,15 +1,15 @@
 class FooterComponent extends HTMLElement {
-    constructor() {
-        super();
-        this.attachShadow({ mode: 'open' }); // Membuka Shadow DOM
-    }
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" }); // Membuka Shadow DOM
+  }
 
-    connectedCallback() {
-        this.render();
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this.shadowRoot.innerHTML = `
+  render() {
+    this.shadowRoot.innerHTML = `
       <style>
         /* Style untuk footer */
         footer {
@@ -23,7 +23,7 @@ class FooterComponent extends HTMLElement {
         <h3>created by nisa</h3>
       </footer>
     `;
-    }
+  }
 }
 
-customElements.define('footer-component', FooterComponent);
+customElements.define("footer-component", FooterComponent);
